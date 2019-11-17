@@ -1,3 +1,3 @@
 #### Footer col 2
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Se hemsidan för kursen på dbwebb här: [kursens hemsida på dbwebb.se](https://dbwebb.se/kurser/javascript1-v2)
