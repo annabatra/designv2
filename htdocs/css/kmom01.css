@@ -88,6 +88,10 @@
 
 /* Main */
 
+p {
+    margin-bottom: 16px;
+}
+
 .inner-wrap-main {
     padding: 30px 0;
 }
