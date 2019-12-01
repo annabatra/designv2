@@ -3,4 +3,4 @@
 Redovisningstexter
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/redovisning/00_index.md`.
+Använd länkarna för att se redovisningen för just det kursmomentet.
