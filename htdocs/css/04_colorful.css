@@ -5025,7 +5025,7 @@ body {
   padding: 0;
   color: #333;
   background-color: #A6D6FC;
-  font: 18px/1.33333333 'Indie Flower', cursive;
+  font: 18px/1.33333333 'Nanum Gothic', sans-serif;
 }
 * {
   margin: 0;
@@ -5165,7 +5165,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 code,
 samp {
@@ -5666,6 +5666,13 @@ hr::after {
   font-weight: 400;
   font-display: swap;
   src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v16/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('NanumGothic'), url(https://fonts.gstatic.com/s/nanumgothic/v17/PN_3Rfi-oW3hYwmKDpxS7F_D-djb.ttf) format('truetype');
 }
 /**
  * My own settings, not currently in their own module.
