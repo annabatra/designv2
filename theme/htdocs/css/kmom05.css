@@ -5035,6 +5035,9 @@ body {
 img {
   max-width: 100%;
 }
+.inner-wrap-header .row {
+  max-width: 100%;
+}
 h1,
 h2,
 h3,

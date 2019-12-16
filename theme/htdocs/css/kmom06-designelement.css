@@ -1,5 +1,5 @@
 /*!
- * A crazy- or i mean colorful theme.
+ * A theme for kmom06 - designelement.
  *
  * This stylesheet is for the design course and kmom03 where we use LESS.
  */
@@ -5018,14 +5018,14 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
-  background-color: #A6D6FC;
+  background-color: #E5EDFF;
 }
 body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #A6D6FC;
-  font: 18px/1.33333333 'Nanum Gothic', sans-serif;
+  background-color: #E5EDFF;
+  font: 18px/1.33333333 'Abel', sans-serif;
 }
 * {
   margin: 0;
@@ -5044,7 +5044,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Abel', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5168,7 +5168,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Abel', sans-serif;
 }
 code,
 samp {
@@ -5654,53 +5654,194 @@ hr::after {
   color: #111;
 }
 /**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 840px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 840px;
+  }
+}
+@media screen and (max-width: 640px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 640px;
+  }
+}
+@media screen and (max-width: 600px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 480px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 320px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 320px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
+}
+@media screen and (max-width: 640px) {
+  .left.w50,
+  .right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  .left.w50 img,
+  .right.w50 img {
+    width: 640px;
+  }
+}
+/**
  * My own settings, not currently in their own module.
  */
 @font-face {
-  font-family: 'Indie Flower';
+  font-family: 'Abel';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuC.ttf) format('truetype');
+  src: local('Abel Regular'), local('Abel-Regular'), url(https://fonts.gstatic.com/s/abel/v10/MwQ5bhbm2POE2V9BOA.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Pacifico';
+  font-family: 'Francois One';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v16/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nanum Gothic';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('NanumGothic'), url(https://fonts.gstatic.com/s/nanumgothic/v17/PN_3Rfi-oW3hYwmKDpxS7F_D-djb.ttf) format('truetype');
+  src: local('Francois One Regular'), local('FrancoisOne-Regular'), url(https://fonts.gstatic.com/s/francoisone/v14/_Xmr-H4zszafZw3A-KPSZut9wQiU.ttf) format('truetype');
 }
 /**
  * My own settings, not currently in their own module.
  */
 .wrap-all {
-  background-image: linear-gradient(#2CA4CC, #BDDDFF);
+  background-color: #E5EDFF;
 }
 h1,
 h2,
 h3,
 h4 {
-  color: #CC7800;
+  color: #737780;
 }
 ul,
-li,
 p,
 code {
-  color: #CC7800;
-  font-weight: 900;
+  color: #737780;
 }
 a {
   text-decoration: none;
-  color: black;
-  font-weight: 900;
+  color: #7A93CC;
 }
-a:hover {
-  color: white;
+.inner-wrap.inner-wrap-header {
+  border-bottom: 8px dashed black;
+}
+.inner-wrap.inner-wrap-footer a {
+  color: green;
+}
+.outer-wrap.outer-wrap-footer {
+  background-image: linear-gradient(#E5EDFF, #7A93CC);
+  border-top: 8px dashed black;
+}
+li {
+  color: #FF6F00;
+  font-family: 'Francois One', sans-serif;
 }
