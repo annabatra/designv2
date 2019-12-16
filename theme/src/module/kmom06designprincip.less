@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+
+/**
+ * My own settings, not currently in their own module.
+ */
+@bgColorHtml: #E5EDFF;
+@bgColorBody: #E5EDFF;
+
+.wrap-all {
+    background-color: #E5EDFF;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #737780;
+}
+
+ul,
+p,
+code {
+    color: #737780;
+}
+
+img {
+    box-shadow: 10px 10px 5px grey;
+}
+
+a {
+    text-decoration: none;
+    color: #7A93CC;
+}
+
+.inner-wrap.inner-wrap-header {
+    border-bottom: 8px dashed black;
+}
+
+.inner-wrap.inner-wrap-footer a {
+    color: green;
+}
+
+.outer-wrap.outer-wrap-footer {
+    background-image: linear-gradient(#E5EDFF,#7A93CC);
+    border-top: 8px dashed black;
+}
+
+
+//  Adapt the typographic grid to my style
+@fontFamilyHeadings: 'Abel', sans-serif;
+@fontFamilyBody:     'Abel', sans-serif;
+@fontFamilyCode:     'Abel', sans-serif;
+
+
+.inner-wrap.inner-wrap-header li {
+    color: #FF6F00;
+    font-family: 'Francois One', sans-serif;
+    text-shadow: 1px 1px 5px grey;
+}
+
+.inner-wrap.inner-wrap-header li:hover {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bolder;
+    color: yellow;
+}
+
+h1 {
+    font-family: 'Bree Serif', serif;
+    color: #9E4500;
+}
+
+// Magic number and base fontsize
+@magicNumber:  24px;  // 22px
+@fontSizeBody: 18px;
